@@ -1,5 +1,5 @@
 
 
- # MARKDOWN  PROJECT POWERED BY GITBOOK ON  GITPAGES
+ # PROJECT POWERED BY GITBOOK 
 
 ![](./resources/hello.jpeg)
