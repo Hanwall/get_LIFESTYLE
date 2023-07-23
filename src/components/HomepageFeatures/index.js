@@ -5,28 +5,28 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'BASE OF LIFE',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/cat1.svg').default,
     description: (
       <>
-        衣食住行,吃喝玩乐
+        LIFE IS MEANINGLESS.
+      </>
+    ),
+  },
+  {
+    title: 'OTHERS OF LIFE',
+    Svg: require('@site/static/img/cat2.svg').default,
+    description: (
+      <>
+         MAY GOD BLESS U ALL.
       </>
     ),
   },
   {
     title: 'END OF LIFE',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/static/img/cat3.svg').default,
     description: (
       <>
-         生老病死
-      </>
-    ),
-  },
-  {
-    title: 'AND OTHERS',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-        HAPPY
+       LOST IN THE WORLD SO LONG TIME
       </>
     ),
   },

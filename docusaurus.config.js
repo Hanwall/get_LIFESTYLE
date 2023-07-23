@@ -38,18 +38,32 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          path: 'wiki',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          
+          // editUrl: ({locale, docPath}) => {
+          //     if (locale !== defaultLocale) {
+          //       return `https://github.com/Hanwall/get_LIFESTYLE/${locale}`;
+          //     }
+          //     // We want users to submit updates to the upstream/next version!
+          //     // Otherwise we risk losing the update on the next release.
+          //     const nextVersionDocsDirPath = 'wiki';
+          //     return `https://github.com/Hanwall/get_LIFESTYLE/${nextVersionDocsDirPath}/${docPath}`;
+          //   },
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          path: 'blog',
+          // editUrl: ({locale, blogDirPath, blogPath}) => {
+          //     if (locale !== defaultLocale) {
+          //       return `https://github.com/Hanwall/get_LIFESTYLE/${locale}`;
+          //     }
+          //     return `https://github.com/Hanwall/get_LIFESTYLE/${blogDirPath}/${blogPath}`;
+          //   },
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -100,7 +114,7 @@ const config = {
             position: 'left'
           },
           {
-            href: 'https://hanwall.github.io/get_LIFESTYLE/',
+            href: 'https://github.com/Hanwall/get_LIFESTYLE/',
             label: '查看代码',
             position: 'right',
           },
@@ -110,35 +124,26 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: '我的站点',
+            title: ' ',
+            items: [  ],
+          },
+          {
+            title: '统计数据 ',
             items: [
               {
-                label: 'LIFESTYLE',
-                to: '/docs/intro',
-              },
+                  html: `
+                <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+                <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+              `,
+                },
             ],
           },
           {
-            title: 'BIG THANKS FOR ',
-            items: [
-              {
-                label: '又拍云',
-                href: 'https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral',
-              }
-              
-            ],
-          },
-          {
-            title: '网站统计',
-            items: [
-              {
-                label: 'GO',
-                to: '/website-getvalue',
-              }
-            ],
-          },
+            title: ' ',
+            items: [  ],
+          }
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `PROJECT ON GITHUBPAGES | POWERED BY <a href="https://docusaurus.io/zh-CN/">Docusaurus</a>.`,
       },
       prism: {
         theme: lightCodeTheme,
