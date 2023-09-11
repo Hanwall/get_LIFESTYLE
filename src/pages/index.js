@@ -3,12 +3,18 @@ import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import HomepageFeatures from '@site/src/pages/homepagefeatures';
+import styles from '../css/index.module.css';
 
-import styles from './index.module.css';
+
+
+
+
+
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
+  
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
@@ -17,11 +23,12 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/markdown-page">
+            to="/docs/intro">
             GETTING STARTED
           </Link>
         </div>
       </div>
+      
     </header>
   );
 }

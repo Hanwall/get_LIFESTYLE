@@ -6,7 +6,6 @@
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://hanwall.github.io/get_LIFESTYLE/blog"/>
     <subtitle>HELLO WORLD Blog</subtitle>
-    <icon>https://hanwall.github.io/get_LIFESTYLE/img/favicon.ico</icon>
     <entry>
         <title type="html"><![CDATA[Welcome]]></title>
         <id>https://hanwall.github.io/get_LIFESTYLE/blog/welcome</id>
