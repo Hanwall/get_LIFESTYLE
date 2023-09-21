@@ -33,7 +33,7 @@ const config = {
   },
   scripts: [
     {
-      src: './img/settime.js',
+      src: './js/settime.js',
       defer: true,
     },
   ],
@@ -104,7 +104,7 @@ const config = {
         title: 'LIFESTYLE',
         logo: {
           alt: 'Logo',
-          src: 'img/loading.gif',
+          src: 'img/default_avatar.gif',
         },
         items: [
           {
